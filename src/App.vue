@@ -1,10 +1,13 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <HelloWorld msg="ahahhahahahhahaVite + Vue  " />
+  <user />
+  <h1>counter数据展示的情况</h1>
+  <counter />
 </template>
+
+<script setup>
+import user from './components/user.vue'
+import counter from '@/components/counter.vue'
+</script>
 
 <style scoped>
 .logo {
