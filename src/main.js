@@ -14,4 +14,5 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
 
+console.log('come in ', import.meta.env.VITE_APP_BASE_HOST)
 app.use(ElementPlus).use(stores).use(Router).mount('#app')
